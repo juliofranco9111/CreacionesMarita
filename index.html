@@ -54,45 +54,55 @@
 <body>
     <header>
         <div class="slider container-fluid d-flex flex-column justify-content-between" >
-          <div class="container-sm text-center" style="margin-top: 105px;">
-          <h1 class="mx-auto">Bienvenidos a mi página web</h1>
+          <div class="container-sm text-center" style="margin-top: 5px;">
+            <h1 class="mx-auto mt-5">Bienvenidos a mi página web</h1>
           </div>
-                
-            <div class="container-fluid d-flex justify-content-center">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow bg-white rounded"" style="background-color:white;" >
-                    <a class="navbar-brand" href="#"><img src="img/tipo.png" alt="" height="60px"></a>
-                    <i class="navbar-toggler navbar-toggler-right" data-feather="more-vertical" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class="navbar-toggler-icon" data-feather="more-vertical"></i>
+        </div>
+             
+        <div class="container">
+
+          <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-white" style="border-top: 2px solid black;">
+            <a class="navbar-brand" href="#"><img src="img/tipo.png" alt="" height="40px"></a>
+            <i class="navbar-toggler navbar-toggler-right" data-feather="more-vertical" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="background: none;">
+              <i class="fas fa-ellipsis-v" style="color: #1B1464; background: none; font-size: 2rem;"></i>
                     </i>
+                    
                   
                     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item nav-link p-1">
-                          <button class="btn btn-outline-violeta rounded-pill" type="button"> Inicio</button>
+                          <button class="btn btn-outline-violeta rounded-pill" type="button">
+                            <a href="index.html" style="text-decoration: none; color: black;">Inicio</a>
+                          </button>
                         </li>
                         <li class="nav-item p-1">
-                            <button class="btn btn-outline-violeta rounded-pill" type="button"> Mis trabajos</button>
+                          <button class="btn btn-outline-violeta rounded-pill" type="button">
+                            <a href="#misTrabajos" style="text-decoration: none; color: black;">Mis trabajos </a>
+                          </button>
                         </li>
                         <li class="nav-item p-1">
-                            <button class="btn btn-outline-violeta rounded-pill" type="button">Contacto</button>
+                          <button class="btn btn-outline-violeta rounded-pill" type="button">
+                            <a href="#sobreMi" style="text-decoration: none; color: black;">Sobre mí</a>
+                          </button>
+                        </li>
+                        <li class="nav-item p-1">
+                            <button class="btn btn-outline-violeta rounded-pill" type="button"><a href="#footer" style="text-decoration: none; color: black;">Contacto</a> </button>
                         </li>
                         
                     </div>
                 </nav>
+          </div>   
                 
-            </div>
-            <div class="d-flex flex-column">
-                <button type="button" class="btn btn-violeta mb-4 mx-auto">Más información</button>
-            </div>
-                
-               
             
-        </div>
+                
+                
+            
+        
     </header>
     
     <section>
         <!-- Trabajos realizados -->    
-        <h2 class="display-4 text-center mt-2 p-3">Éstos son algunos de mis trabajos realizados</h2>
+        <h1 class="text-center mt-2 p-3" id="misTrabajos">Éstos son algunos de mis trabajos realizados</h1>
         <!-- Carrusel -->
         <div class="row container m-auto justify-content-center" style="padding:0 6%;">
           <div id="carouselExampleFade" class="carousel slide carousel-column carousel-fade" data-ride="carousel">
@@ -118,7 +128,7 @@
         </div>
     </section>
     
-    <section class="container mb-5">
+    <section class="container mb-5" id="sobreMi">
       <!-- card -->
       <div class="card mb-3 mt-5 mx-auto" style="max-width: 740px;">
         <div class="row no-gutters">
@@ -127,7 +137,7 @@
           </div>
           <div class="col-md-8">
             <div class="card- text-right">
-              <h1 class="card-title display-4">Acerca de mí</h1>
+              <h1 class="card-title display-4 ">Sobre mí</h1>
               <p class="card-text">Con mi trabajo quiero mostrar a mis seguidores la dedicación, el esmero y la estética con las que hago cada trabajo.<br>
               <p class="card-text"> Desarrollo cada proyecto porque  en ellos encuentro una manera de entretenerme y mantenerme ocupada en mis ratos libres.</p>
               <p class="card-text">Estas delicados  manualidades también me generan algunos ingresos para suplir algunas  de mis necesidades  básicas.</p>
@@ -141,6 +151,7 @@
     
     <div class="container-fluid text-center pie" ">
       <footer>
+        <p><a id="footer"></a></p>
           <div class="container">
             <h1>Contacto</h1>
               <!-- contacto -->
